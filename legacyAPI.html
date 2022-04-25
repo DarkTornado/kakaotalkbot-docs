@@ -64,11 +64,12 @@
                 <dd id="d2-3" class="sdb">FileStream</dd><br>
                 <dd id="d2-4" class="sdb">DataBase</dd><br>
                 <dd id="d2-5" class="sdb">Log</dd><br>
-                <dd id="d2-6" class="sdb">Device</dd><br>
-                <dd id="d2-7" class="sdb">Bridge</dd><br>
-                <dd id="d2-8" class="sdb">AppData</dd><br>
-                <dd id="d2-9" class="sdb">replier</dd><br>
-                <dd id="d2-10" class="sdb">imageDB</dd>
+                <dd id="d2-6" class="sdb">GlobalLog</dd><br>
+                <dd id="d2-7" class="sdb">Device</dd><br>
+                <dd id="d2-8" class="sdb">Bridge</dd><br>
+                <dd id="d2-9" class="sdb">AppData</dd><br>
+                <dd id="d2-10" class="sdb">replier</dd><br>
+                <dd id="d2-11" class="sdb">imageDB</dd>
             </span> 
         </span>
         <span class="list" id="bookmark" data-isVisible="false">
@@ -315,7 +316,7 @@
             </div>
             <div id="2-5" class="content">
                 <p class="title">Log</p>
-                <p class="dscrpt">레거시 Api 중 <strong>Log</strong>는 메신저봇R 내에 있는 로그화면에 로그를 작성하는 기능을 제공합니다.</p>
+                <p class="dscrpt">레거시 Api 중 <strong>Log</strong>는 메신저봇R에 있는 각 스크립트들의 로그화면에 로그를 작성하는 기능을 제공합니다.</p>
                 <div class="table">
                     <table>
                         <th>이름</th>
@@ -345,6 +346,37 @@
                 </div>
             </div>
             <div id="2-6" class="content">
+                <p class="title">GlobalLog</p>
+                <p class="dscrpt">레거시 Api 중 <strong>GlobalLog</strong>는 메신저봇R 메인화면의 오버플로우 메뉴에서 들어갈 수 있는 로그화면에 로그를 작성하는 기능을 제공합니다.</p>
+                <div class="table">
+                    <table>
+                        <th>이름</th>
+                        <th>형식</th>
+                        <th>설명</th>
+                        <tr>
+                            <td><p class="code" id="p">d(data: String)</p><br><p class="code" id="p">debug(String data)</p><br><p class="code" id="p">d(String data, Boolean showToast = false)</p><br><p class="code" id="p">debug(String data, Boolean showToast = false)</p></td>
+                            <td><p class="code">void</p></td>
+                            <td>디버그 로그를 작성합니다.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="code" id="p">e(data: String)</p><br><p class="code" id="p">error(String data)</p><br><p class="code" id="p">e(String data, Boolean showToast = false)</p><br><p class="code" id="p">error(String data, Boolean showToast = false)</p></td>
+                            <td><p class="code">void</p></td>
+                            <td>에러 로그를 작성합니다.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="code" id="p">i(data: String)</p><br><p class="code" id="p">info(String data)</p><br><p class="code" id="p">i(String data, Boolean showToast = false)</p><br><p class="code" id="p">info(String data, Boolean showToast = false)</p></td>
+                            <td><p class="code">void</p></td>
+                            <td>정보 로그를 작성합니다.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="code">clear()</p></td>
+                            <td><p class="code">void</p></td>
+                            <td>로그를 모두 삭제합니다.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="2-7" class="content">
                 <p class="title">Device</p>
                 <p class="dscrpt">레거시 Api 중 <strong>Device</strong>는 구동 기기에 대한 하드웨어/운영체제 정보를 제공합니다.</p>
                 <div class="table">
@@ -420,7 +452,7 @@
                     </table>
                 </div>
             </div>
-            <div id="2-7" class="content">
+            <div id="2-8" class="content">
                 <p class="title">Bridge</p>
                 <p class="dscrpt">레거시 Api 중 <strong>Bridge</strong>는 다른 스크립트와의 접근을 지원합니다.</p>
                 <div class="table">
@@ -441,7 +473,7 @@
                     </table>
                 </div>
             </div>
-            <div id="2-8" class="content">
+            <div id="2-9" class="content">
                 <p class="title">AppData</p>
                 <p class="dscrpt">레거시 Api 중 <strong>AppData</strong>는 앱 데이터에 대한 기능을 지원합니다.</p>
                 <div class="table">
@@ -492,7 +524,7 @@
                     </table>
                 </div>
             </div>
-            <div id="2-9" class="content">
+            <div id="2-10" class="content">
                 <p class="title">replier</p>
                 <p class="dscrpt">레거시 Api 중 <strong>replier</strong>는 메시지 수신에 대한 기능을 제공합니다.</p>
                 <div class="table">
@@ -518,7 +550,7 @@
                     </table>
                 </div>
             </div>
-            <div id="2-10" class="content">
+            <div id="2-11" class="content">
                 <p class="title">imageDB</p>
                 <p class="dscrpt">레거시 Api 중 <strong>imageDB</strong>는 이미지에 대한 기능을 제공합니다. (단, 이미지를 전송하는 기능은 포함되어 있지 않습니다.)</p>
                 <div class="table">
